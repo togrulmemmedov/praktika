@@ -1,0 +1,43 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+    font-family: 'Roboto';
+}
+th, td{
+    text-align: left;
+    padding: 8px;
+}
+th, rd:last-child{
+    background-color: rgb(86, 86, 232);
+    color: white;
+    font-weight: bold;
+}
+tr:nth-child(even){
+    background-color: pink;
+}
+tr:nth-child(odd){
+    background-color:rgb(237, 220, 220);
+}
+tr:hover{
+    background-color: rgb(189, 189, 30);
+}
+td{
+    position: relative;
+}
+
+span {
+  background-color: rgb(155, 147, 147);
+  position: absolute;
+  top: 0;
+  transform: translateY(70%) scale(0);
+  transition: transform 0.2s ease-in;
+  transform-origin: left;
+  display: inline;
+  z-index: 20;
+  min-width: 100%;
+  padding: 1rem;
+  border: 1px solid black;
+}
+td:hover span {
+    transform: translateY(70%) scale(1);
+}
